@@ -1,0 +1,18 @@
+hal yang perlu diketahui:
+-untuk ip menggunakan "socket.gethostbyname(socket.gethostname())" sehingga ip yang digunakan: ip yang tersambung saat ini
+-sistem dari chat ini chat room tapi bisa melakukan chat 2 arah melaui unicast
+-jika ingin mengirim data, foto, dll,   bisa dilakukan di client.py.  server hanya bersifat perantara sehingga hanya perlu diaktifkan saja.
+-sebelum mengirim pesan,  pertama client menginisiasi nama alias. terserah kasih nama apa
+
+tutorial:
+-jika ingin mengirim unicast, kirim dengan format demikian: "@unicast + nama alias + pesan anda"
+    contoh (jika alias tujuan: aa) -> @unicast aa halo kau
+-jika ingin mengirim multicast, kirim dengan format demikian: "@multicast + pesan anda"
+    contoh (jika alias tujuan: aa) -> @multicast aa bb halo kau
+-jika ingin mengirimkan file, maka ketik :"@file:filename alias"
+    contoh (jika alias tujuan : aa dan file: dada.png) -> @file:dada.png aa
+    nb: jika gak keterima file, coba kirim 2-3 kali karena file disimpan di server dulu
+
+jika ada yang mau nambahin silakan
+
+dari pajrul
